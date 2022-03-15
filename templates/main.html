@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script>const session_username = "{{username}}"</script>
+    <script defer src="js/main.js">
+    </script>
+    <title>EVault Password Manager</title>
+</head>
+
+<body class="dashboard">
+    <figure class="dashboard__logo">
+        <a href="{{url_for('home')}}">
+            <img src="/images/logo2.png" alt="E vault logo">
+        </a>
+    </figure>
+
+    <h1 class="dashboard__heading">
+        Welcome, <span class="dashboard__user--name">{{user}}</span>
+    </h1>
+
+    <div class="dashboard__main">
+        <div class="dashboard__main--left">
+            <ul class="dashboard__buttons">
+                <li class="dashboard__button btn--one active">Generate Password</li>
+                <li class="dashboard__button btn--two">View All Password</li>
+                <li class="dashboard__button btn--three">Search Password</li>
+            </ul>
+
+            <form action="/logout.py" class="log__out">
+                <button type="submit" class="nav__login">Log Out</button>
+            </form>
+        </div>
+        <div class="dashboard__main--right">
+            <div class="dashboard__generate--password">
+                <form action="" class="save__pass">
+                    <input type="text" class="gen--website" placeholder="Website Name" required>
+                    <input type="text" class="gen--username" placeholder="Username / Email" required>
+                    <input type="text" class="gen--pass" placeholder="Password" required>
+                    <a class="nav__register">Generate</a>
+                    <button class="nav__login" type="submit">Save Password</button>
+                    <p class="success__message"></p>
+                </form>
+            </div>
+            <div class="hide dashboard__view--password">
+                <table class="password--table">
+                    <tr>
+                        <th>Website</th>
+                        <th>Username</th>
+                        <th>Password</th>
+                        <th>del</th>
+                    </tr>
+                    <!-- <tr>
+                        <td>dummy</td>
+                        <td>dummy</td>
+                        <td>dummy</td>
+                        <td>
+                            <button class="delete_password" type="submit">Delete</button>
+                        </td>
+                    </tr> -->
+                </table>
+            </div>
+            <div class="hide dashboard__search--password">
+                <table class="password--table search__pass--table">
+                    <tr>
+                        <th colspan="3"><input placeholder="Search for a website" class="search_password_input"
+                                type="text"></th>
+                        <th><button class="search_password" type="submit">Search</button></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

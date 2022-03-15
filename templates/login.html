@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>EVault Password Manager</title>
+</head>
+
+<body class="login--body">
+    <main class="login--main">
+        <figure class="login--main__logo">
+            <a href="{{url_for('home')}}">
+                <img src="images/logo2.png" alt="E vault Logo">
+            </a>
+        </figure>
+
+        <figure class="login--main__image">
+            <img src="images/login.jpg" alt="/">
+        </figure>
+
+        <form action="/login.py" method="post" class="login--main__form">
+            <input type="text" name="login--username" placeholder="username" class="login--username">
+            <input type="password" name="login--password" placeholder="password" class="login--password">
+            <p class="login--error">{{error_message}}</p>
+            <div class="login--main__form--buttons">
+                <button type="submit" class="nav__login">login</button>
+                <a href="{{url_for('register')}}" class="nav__register">register</a>
+            </div>
+        </form>
+
+    </main>
+
+
+</body>
+
+</html>

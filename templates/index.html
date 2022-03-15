@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>EVault Password Manager</title>
+</head>
+
+<body class="home--body">
+    <nav class="nav">
+        <figure class="nav__logo">
+            <a href="{{url_for('home')}}">
+                <img src="images/logo2.png" alt="E Vault Logo" />
+            </a>
+        </figure>
+        <div class="nav__buttons">
+            <a href="{{url_for('login')}}" class="nav__login">log in</a>
+            <a href="{{url_for('register')}}" class="nav__register">register</a>
+        </div>
+    </nav>
+    <main class="main">
+        <figure class="main__image">
+            <img src="images/header.jpg" alt="/">
+        </figure>
+        <div class="main__wrapper">
+            <p class="main__paragraph">
+                Have trouble remembering your passwords?
+                Need strong passwords for your accounts?
+                We at <span>E vault</span> have got you covered! All your passwords at one place.
+                So what are you waiting for?
+            </p>
+            <div class="main__button">
+                <a href="{{url_for('register')}}" class="nav__register">register now</a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

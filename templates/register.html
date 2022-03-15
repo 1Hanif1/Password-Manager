@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>EVault Password Manager</title>
+</head>
+
+<body class="registration">
+    <figure class="registration__logo">
+        <a href="{{url_for('home')}}">
+            <img src="images/logo2.png" alt="E Vault">
+        </a>
+    </figure>
+
+    <h1 class="registration__heading">Account Registration</h1>
+
+    <figure class="registration__image">
+        <img src="images/register.jpg" alt="/">
+    </figure>
+
+    <form action="/register.py" class="registration__form" method="post">
+        <p class="register_error"> {{error_message if error_message else '' }} </p>
+        <input type=" text" name="register--name" placeholder="Name" required />
+        <input type="email" name="register--email" placeholder="Email" required />
+        <input type="text" name="register--username" placeholder="Username" required />
+        <input type="password" name="register--password" placeholder="Password" required />
+        <button type="submit" class="nav__register">Register</button>
+        <p>Already have an account? <a href="{{url_for('login')}}">Log In</a></p>
+    </form>
+
+    <script>
+        const error_message = document.querySelector('.register_error')
+        setTimeout(() => {
+            error_message.textContent = ''
+        }, 5000)
+
+    </script>
+</body>
+
+</html>

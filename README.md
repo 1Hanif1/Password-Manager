@@ -20,6 +20,14 @@ A Simple Web application to store and manage your passwords
 
 ![Main Dashboard](./screenshots/Dashboard.png "Main Dashboard")
 
+## How to set up
+
+- run `pip install -r requirements.txt` it will install all dependencies
+
+- Install [mongodb](https://docs.mongodb.com/manual/installation/)
+
+- run `app.py` file
+
 ## Features
 
 - Users can register/login an account

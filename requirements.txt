@@ -1,0 +1,3 @@
+flask
+flask_mongoengine
+flask_session

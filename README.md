@@ -4,6 +4,8 @@ A Simple Web application to store and manage your passwords
 
 ## Screenshots
 
+- here are some screenshots, alternatively you can also download the `Demo.mp3` file from `screenshots` folder to view a working demo video of the application
+
 ### Home Page
 
 ![Home Page](./screenshots/Home.png "Home Page")

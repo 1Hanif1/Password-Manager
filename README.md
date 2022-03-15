@@ -6,27 +6,19 @@ A Simple Web application to store and manage your passwords
 
 ### Home Page
 
-![Home Page](screenshots\Home.png "Home Page")
+![Home Page](./screenshots/Home.png "Home Page")
 
 ### Login Page
 
-![Login Page](screenshots\Login.png "Login Page")
+![Login Page](./screenshots/Login.png "Login Page")
 
 ### Register Page
 
-![Register Page](screenshots\Register.png "Register Page")
+![Register Page](./screenshots/Register.png "Register Page")
 
 ### Dashboard
 
-![Main Dashboard](screenshots\Dashboard.png "Main Dashboard")
-
-## Demo Video
-
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="screenshots\Home.png">
-    <source src="screenshots\Demo.mp4" type="video/mp4">
-  </video>
-</figure>
+![Main Dashboard](./screenshots/Dashboard.png "Main Dashboard")
 
 ## Features
 

@@ -55,18 +55,6 @@ A Simple Web application to store and manage your passwords
 - Database connectivity
 - Sending data from the backend to the frontend
 
-## How I built it
-
- I made this project for my college assignment.
-
- The frontend work was fairly simple as I am a bit well versed with it.
-
- But the backend was tough. I had to learn a lot of new things, do a lot of googling, debug a lot of issues to make it work. It is my first fullstack application.
-
-I used mongodb since I got to know it uses JSON like format to store data and as someone with frontend experience it felt less intimidating to start.
-
-Overall I had a lot of fun building this project
-
 ## Socials
 
 🐦 Twitter - [@HMohammedB_](https://twitter.com/HMohammedB_)

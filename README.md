@@ -2,6 +2,8 @@
 
 A Simple Web application to store and manage your passwords
 
+Here's a video demonstrating the application: [Google Drive Link](https://drive.google.com/file/d/1vt8cV7BmZFk1bs7Ig_BGtygzTTRNVQm5/view?usp=sharing)
+
 ## Screenshots
 
 - here are some screenshots, alternatively you can also download the `Demo.mp3` file from `screenshots` folder to view a working demo video of the application
